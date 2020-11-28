@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="google-signin-client_id" content="594577013885-4bs17clcvj7dnptkq5jkdr1uaanecgq2.apps.googleusercontent.com">
+    
+    <title>Classwork Alarm</title>
 </head>
 <body>
+    <header>
+    </header>
+    <main>
+        <div class ="left">
+            <div class ="hero_left">
+                <p class="bold">Having troubles with panctuality?</p>
+                <br />
+                <p class="bold">Keep forgetting your deadlines?</p>
+                <br />
+                <p class="bold">Stop the loop.</p>
+            </div>
+            
+            <div class="g-signin2" data-onsuccess="onSignIn">
+                <button type="button" onclick="alert('Signed in!')">
+                    <span class="iconify" data-inline="false" data-icon="flat-color-icons:google" style="font-size: 38px;"></span>
+                    Sign in   
+                </button>
+            </div>
+        </div>
+        
+    </main>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
     <script src="script.js"></script>
 </body>
 </html>
